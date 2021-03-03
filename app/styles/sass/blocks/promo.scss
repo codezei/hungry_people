@@ -1,0 +1,19 @@
+.promo {
+    background-image: url(../images/dist/header-bg.png);
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    &__link {
+        color: #fff;
+        padding: 15px;
+        display: block;
+    }
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
