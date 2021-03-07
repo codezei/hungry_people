@@ -41,6 +41,11 @@
         }
 
     }
+    &__btn {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 15px;
+    }
     .container {
         display: flex;
         align-items: flex-start;
@@ -53,8 +58,11 @@
     display: flex;
     &__link {
         color: #fff;
-        padding: 15px;
+        padding: 25px 15px;
         display: block;
+        &:hover {
+            color: #fff;
+        }
     }
 }
 .header {
@@ -82,24 +90,21 @@
     justify-content: center;
     
 }
-.btn {
-    display: block;
-    padding: 20px 10px;
-    border: 1px solid #fff;
-    text-transform: uppercase;
-    text-align: center;
-    width: 200px;
-    border-radius: 2px;
-    color: #fff;
-    transition: all 400ms;
-    text-decoration: none;
-    margin: 0 15px;
-    &:hover {
-        background: #E8C300;
-        border: 1px solid #E8C300;
-        transition: all 400ms;
-        color: #fff;
-        text-decoration: none;
 
+.anchor {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 50%;
+    &__inner {
+        display: block;
+        background: #fff;
+        color: #333333;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 15px;
+        text-align: center;
+        line-height: 50px;
     }
 }

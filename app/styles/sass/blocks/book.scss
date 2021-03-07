@@ -1,0 +1,31 @@
+.book {
+    color: #000000;
+    padding-top: 100px;
+    &__btn {
+        width: 100%;
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__input {
+        width: calc(50% - 5px);
+        background: #e5e5e5;
+        color: #666;
+        margin-bottom: 10px;
+        border: none;
+        padding: 10px;
+        border-radius: 2px;
+        &:nth-child(odd) {
+            margin-right: 10px;
+        }
+    }
+    &__mode {
+        color: #333333;
+        padding: 40px 0;
+        text-align: center;
+        a {
+            color: inherit;
+        }
+    }
+}

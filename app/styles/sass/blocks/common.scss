@@ -1,0 +1,108 @@
+.btn {
+    display: block;
+    padding: 20px 10px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;
+    color: inherit;
+    transition: all 400ms;
+    text-decoration: none;
+    
+    &:hover {
+        background: #E8C300;
+        border: 1px solid #E8C300;
+        transition: all 400ms;
+        color: #fff;
+        text-decoration: none;
+
+    }
+    &--fill {
+        background: #E8C300;
+        border: 1px solid #E8C300;
+        color: #fff;
+    }
+}
+.title {
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+    font-family: Fascinate;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    &:before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        border-radius: 2px;
+        background: #E8C300;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.section-name {
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.custom-pic {
+    &__wrap {
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            border: 10px solid #E8C300;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+        &--right {
+            padding-right: 125px;
+            &:after {
+                right: 0;
+            }
+            
+        }
+        &--left {
+            padding-left: 125px;
+            &:after {
+                left: 0;
+            }
+        }
+        &--flex {
+            display: flex;
+        }
+
+    }
+    &__image {
+        width: 100%;
+    }
+    &__asign {
+        text-transform: uppercase;
+        color: #fff;
+        width: 80px;
+        background: #000;
+        line-height: 60px;
+        padding: 10px;
+        &--left {
+            writing-mode: vertical-rl;
+        }
+        &--right {
+            writing-mode: vertical-rl;
+            transform: scale(-1);
+        }
+    }
+}

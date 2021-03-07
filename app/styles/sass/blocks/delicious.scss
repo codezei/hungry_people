@@ -1,0 +1,66 @@
+.delicious {
+    color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    color: #333333;
+    margin: 30px 0;
+    &__btn {
+        background: none;
+        border: none;
+        outline: none;
+        padding: 10px 25px;
+        font-weight: 700;
+        color: inherit;
+        text-transform: uppercase;
+        
+    }
+    li:not(:last-child) &__btn {
+        border-right: 1px solid rgba($color: #333333, $alpha: 0.3);
+    }
+}
+.menu {
+    overflow: hidden;
+    color: #333333;
+    &__section {
+        display: none;
+        opacity: 0;
+        transition: all 200ms;
+        transform: translateX(-100%);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        &.active {
+            // display: flex;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+.dish {
+    width: 30%;
+    margin-bottom: 15px;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__name {
+        margin-bottom: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+    &__price {
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+
+}

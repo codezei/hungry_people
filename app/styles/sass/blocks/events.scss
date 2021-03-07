@@ -1,0 +1,11 @@
+.events {
+    background-image: url(../images/dist/specialties-bg.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    &__desc {
+        text-align: center;
+        padding: 40px 0;
+        opacity: 0.8;
+    }
+}
