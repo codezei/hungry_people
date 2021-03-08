@@ -10,12 +10,7 @@
     }
     &__input {
         width: calc(50% - 5px);
-        background: #e5e5e5;
-        color: #666;
-        margin-bottom: 10px;
-        border: none;
-        padding: 10px;
-        border-radius: 2px;
+
         &:nth-child(odd) {
             margin-right: 10px;
         }

@@ -1,0 +1,8 @@
+.gallery {
+    &__wrap {
+        display: flex;
+    }
+    &__item {
+        width: 25%;
+    }
+}

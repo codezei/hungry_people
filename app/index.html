@@ -167,23 +167,17 @@
 						BOOK A TABLE
 					</h2>
 					<form class="book__form form">
-						<input type="text" class="form-control book__input" placeholder="Name" aria-label="Name" name="name">
-						<input type="email" class="form-control book__input" placeholder="Email" aria-label="Email" name="email">
-						<input type="tel" class="form-control book__input" placeholder="Phone" aria-label="Phone" name="phone">
-						<select class="form-select book__input" aria-label="People" name="people">
+						<input type="text" class="form-control book__input form__input" placeholder="Name" aria-label="Name" name="name">
+						<input type="email" class="form-control book__input form__input" placeholder="Email" aria-label="Email" name="email">
+						<input type="tel" class="form-control book__input form__input" placeholder="Phone" aria-label="Phone" name="phone">
+						<select class="form-select book__input form__input" aria-label="People" name="people">
 							<option selected>People</option>
 							<option value="1">One</option>
 							<option value="2">Two</option>
 							<option value="3">Three</option>
 						</select>							
-						<input type="date" class="form-control book__input" aria-label="Date" name="date">
-						<!-- <select class="form-select book__input" aria-label="Time" name="time">
-							<option selected>Open this select menu</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-							</select>							 -->
-						<input type="time" class="form-control book__input" aria-label="Time" name="time">
+						<input type="date" class="form-control book__input form__input" aria-label="Date" name="date">
+						<input type="time" class="form-control book__input form__input" aria-label="Time" name="time">
 						<button class="btn book__btn btn--fill">
 							BOOK NOW
 						</button>
@@ -474,6 +468,53 @@
 			</div>
 		</div>
 	</section>
+	<div class="gallery">
+		<!-- <div class="container"> -->
+			<div class="gallery__wrap">
+				<img src="images/dist/gallery-1.png" alt="" class="gallery__item">
+				<img src="images/dist/gallery-2.png" alt="" class="gallery__item">
+				<img src="images/dist/gallery-3.png" alt="" class="gallery__item">
+				<img src="images/dist/gallery-4.png" alt="" class="gallery__item">
+			</div>
+		<!-- </div> -->
+	</div>
+	<section class="contact">
+		<div class="container">
+			<h2 class="title">
+				CONTACT
+			</h2>
+			<h4 class="sub-title">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+			</h4>
+			<form class="contact__form form" name="contact">
+				<input type="text" class="form-control contact__input form__input" placeholder="Name" aria-label="Name" name="name">
+				<input type="email" class="form-control contact__input form__input" placeholder="Email" aria-label="Email" name="email">
+				<input type="tel" class="form-control contact__input form__input" placeholder="Phone" aria-label="Phone" name="phone">
+				<textarea name="message" rows="7" class="form-control contact__textarea form__input" placeholder="message"></textarea>
+				<div class="contact__info">
+					<div class="contact__info-item">
+						<i class="bi bi-geo-alt-fill"></i><span class="mr1">5th London Boulevard, U.K.</span>
+					</div>
+					<div class="contact__info-item">
+						<i class="bi bi-telephone-fill"></i><a href="tel:+40729131637" >+40 729 131 637</a>/<a href="tel:+40726458782">+40 726 458 782 </a>
+					</div>
+					<div class="contact__info-item">
+						<i class="bi bi-envelope-fill"></i><a href="mailto:office@mindblister.com">office@mindblister.com</a>
+					</div>
+					
+				</div>
+				<button class="btn btn--fill contact__btn">SEND MESSAGE</button>
+			</form>
+		</div>
+	</section>
+	<div class="map">
+		<img src="images/dist//map.png" alt="" class="map__img">
+	</div>
+	<footer class="footer">
+		<div class="container">
+			&copy; Copyright 2021
+		</div>
+	</footer>
 </main>
 
 <!--#include virtual="/parts/footer.html" -->
