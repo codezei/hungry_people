@@ -41,4 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	toggleMenuCategory()
 
+	function toggleMobMenu () {
+		let menuBtn = document.querySelector('.mob-menu__btn')
+		let closeMenuBtn = document.querySelector('.mob-menu__close')
+		let overlay = document.querySelector('.overlay')
+		menuBtn.addEventListener('click', function(){
+			document.body.classList.add('overlay-open')
+			setTimeout(function(){
+				document.body.classList.add('menu-open')
+			}, 100)
+		})
+		closeMenuBtn.addEventListener('click', function() {
+			document.body.classList.remove('menu-open')
+			setTimeout(function(){
+				document.body.classList.remove('overlay-open')
+			}, 400)
+
+		})
+		overlay.addEventListener('click', function() {
+			document.body.classList.remove('menu-open')
+			setTimeout(function(){
+				document.body.classList.remove('overlay-open')
+			}, 400)
+
+		})
+	}
+	toggleMobMenu ()
+
 })
