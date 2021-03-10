@@ -1,12 +1,19 @@
 .book {
     color: #000000;
     padding-top: 100px;
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+    }
+
     &__btn {
         width: 100%;
     }
     &__form {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
     }
     &__input {
         width: calc(50% - 5px);
@@ -19,8 +26,12 @@
         color: #333333;
         padding: 40px 0;
         text-align: center;
+        margin-bottom: 0;
         a {
             color: inherit;
+        }
+        @media (max-width: 1199px) {
+            padding: 20px 0;
         }
     }
 }

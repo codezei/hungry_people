@@ -4,4 +4,7 @@
     background-image: url(../images/dist/specialties-bg.png);
     background-position: center;
     background-size: cover;
+    @media (max-width: 1199px) {
+        padding-bottom: 50px;
+    }
 }

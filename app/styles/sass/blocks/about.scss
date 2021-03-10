@@ -5,5 +5,9 @@
     &__text {
         text-align: center;
     }
+    @media (max-width: 1199px) {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
 }
 

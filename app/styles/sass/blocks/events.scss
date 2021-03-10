@@ -7,5 +7,11 @@
         text-align: center;
         padding: 40px 0;
         opacity: 0.8;
+        @media (max-width: 1199px) {
+            padding: 20px 0;
+        }
+    }
+    .row .col-xl-6:nth-child(1) .custom-pic__wrap {
+        margin-bottom: 15px;
     }
 }
