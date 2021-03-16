@@ -4,6 +4,9 @@
     @media (max-width: 1199px) {
         padding-top: 50px;
     }
+    @media (max-width: 575px) {
+        padding-top: 25px;
+    }
 
     &__btn {
         width: 100%;

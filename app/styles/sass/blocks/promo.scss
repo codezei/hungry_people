@@ -1,5 +1,5 @@
 .promo {
-    background-image: url(../images/dist/header-bg.png);
+    background-image: url(../images/dist/header-bg.jpg);
     background-size: cover;
     background-position: top center;
     color: #fff;
@@ -10,6 +10,10 @@
     }
     @media (max-width: 1199px) {
         padding-bottom: 50px;
+    }
+    @media (max-width: 575px) {
+        padding-bottom: 25px;
+        background-image: url(../images/dist/header-bg__mob.jpg);
     }
     &__inner {
         display: flex;

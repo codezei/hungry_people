@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		})
 		overlay.addEventListener('click', function(e) {
-			if (e.target === e.currentTarget) {
+			if (e.target === e.currentTarget || e.target.classList.contains('menu__link')) {
 				document.body.classList.remove('menu-open')
 				setTimeout(function(){
 					document.body.classList.remove('overlay-open')

@@ -6,6 +6,10 @@
         padding-bottom: 50px;
         padding-top: 50px;
     }
+    @media (max-width: 575px) {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
 }
 .categories {
     display: flex;
@@ -65,7 +69,14 @@
 }
 .dish {
     width: 30%;
-    margin-bottom: 15px;
+    
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    &:last-child &__desc {
+        margin-bottom: 0;
+    }
+
     @media (max-width: 767px) {
         width: calc(50% - 5px);
         &:nth-child(odd) {
